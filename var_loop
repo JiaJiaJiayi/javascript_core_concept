@@ -1,0 +1,38 @@
+### Problem
+```javascript
+arr = [1,2,3,4];
+funcs = [];
+for(var i=0; i< arr.length; i++)
+{
+  funcs.push(()=>{console.log(i)});
+}
+funcs[3]();
+```
+
+#### Use IIFE
+```javascript
+  var arr = [1,2,3,4],
+  funcs = [];
+  for(var i=0; i< arr.length; i++)
+  {
+    funcs[i] = (function(i){
+      return () => console.log(i);
+    }(i))
+  }
+  funcs[3]();
+```
+
+#### Use callee
+```
+arr = [1,2,3,4];
+funcs = [];
+for(var i=0; i< arr.length; i++)
+{
+  funcs[i] = function(){
+    console.log(argument.callee.c);
+  }
+  // 使用静态属性！
+  func[i].c = i;
+}
+funcs[3]();
+```

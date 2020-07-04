@@ -33,3 +33,14 @@ console.log(i.next().value);
 // console.log(i.next());
 // console.log(i.next());
 ```
+
+### 使用generator循环到结束
+```javascript
+function* generator1(){ yield 1; yield 2; yield 3; yield 4}
+const gen = generator1();
+let next = gen.next();
+while(!next.done){
+    console.log(next.value);
+    next = gen.next();
+}
+```

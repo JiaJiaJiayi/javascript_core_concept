@@ -63,4 +63,4 @@ alert("code");
  
  1. All microtasks are completed before any other event handling or rendering or any other macrotask takes place.
  2. 如果我们想要异步执行一个function(after the current code), 但是在rendering之前，我们可以使用`queueMicroTask`来schedule.
-  + 一般 `queueMicroTask`很少用，一些框架可能会用到，在这个接口出来之前，一般用Promise.resolve().then(()=>{...code...})来执行
+  + 一般 `queueMicroTask`很少用，一些框架可能会用到，在这个接口出来之前，一般用`Promise.resolve().then(()=>{...code...})`来执行

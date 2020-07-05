@@ -21,6 +21,7 @@ class A {
 let B = /** @class */ (() => {
     class B extends A {
         constructor() {
+        // super(...arguments); If need to pass all arguments to super.
             super();
         }
     }

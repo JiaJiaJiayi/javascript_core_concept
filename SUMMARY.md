@@ -1,6 +1,7 @@
 # Table of contents
 
-* [\[TODO\] JS namespace thinking](README.md)
+* [\[TODO20220503\]Difference between Inheritance and Polymorphism](README.md)
+* [\[TODO20220502\] JS namespace thinking](todo20220502-js-namespace-thinking.md)
 * [Error的stack](Error的stack.md)
 * [Error类型整理](Error类型整理.md)
 * [Await and microtask](<\[to write] await.md>)
